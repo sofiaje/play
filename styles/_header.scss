@@ -5,22 +5,16 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    padding: 0.5rem;
+    padding: 1rem;
   }
   i {
     font-size: 46px;
     margin: 1rem 0;
   }
-  nav {
-    padding: 0 1rem;
-  }
-  a {
-    text-transform: uppercase;
-  }
 }
 .header_container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 .logo {
   order: -1;

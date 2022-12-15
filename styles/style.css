@@ -3,18 +3,48 @@
   margin: 0 auto;
 }
 
+@media (min-width: 992px) {
+  .hero_container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero_container div {
+  min-width: 300px;
+  order: -1;
+  padding: 1rem;
+}
+
 * {
   font-family: "Nunito", sans-serif;
-  color: #d7cfc6;
+}
+
+a {
+  text-decoration: none;
 }
 
 header a {
   font-family: "Barlow Semi Condensed", sans-serif;
+  color: #b5aca1;
+  text-transform: uppercase;
+  font-weight: 400;
   font-size: 1.1rem;
-  text-decoration: none;
   padding: 0.5rem 0;
 }
 header a:hover {
+  border-bottom: 2px solid white;
+  color: white;
+}
+@media (min-width: 768px) {
+  header a {
+    font-size: 1.3rem;
+  }
+}
+header a.active-page {
+  border-bottom: 2px solid #b5aca1;
+}
+header a.active-page:hover {
   border-bottom: 2px solid white;
 }
 
@@ -24,22 +54,16 @@ header ul {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 header i {
   font-size: 46px;
   margin: 1rem 0;
 }
-header nav {
-  padding: 0 1rem;
-}
-header a {
-  text-transform: uppercase;
-}
 
 .header_container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .logo {
@@ -56,12 +80,19 @@ header a {
   }
 }
 
-img {
+.hero_img {
+  padding-top: 5rem;
   width: 100%;
   max-width: 900px;
 }
+@media (min-width: 992px) {
+  .hero_img {
+    width: 70%;
+  }
+}
 
 * {
+  color: #c4bfb8;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

@@ -1,5 +1,8 @@
-
-img {
+.hero_img {
+  padding-top: 5rem;
   width: 100%;
   max-width: 900px;
+  @include lg {
+    width: 70%;
+  }
 }

@@ -1,20 +1,34 @@
 * {
   font-family: "Nunito", sans-serif;
-  color: $headerElementColor;
 }
 
-h1,
-h2,
-h3,
-h4 {
+// h1,
+// h2,
+// h3,
+// h4 {
+// }
+a {
+  text-decoration: none;
 }
 
 header {
   a {
     font-family: "Barlow Semi Condensed", sans-serif;
+    color: $headerElementColor;
+    text-transform: uppercase;
+    font-weight: 400;
     font-size: 1.1rem;
-    text-decoration: none;
     padding: 0.5rem 0;
+    &:hover {
+      border-bottom: 2px solid white;
+      color: white;
+    }
+    @include md {
+      font-size: 1.3rem;
+    }
+  }
+  a.active-page {
+    border-bottom: 2px solid $headerElementColor;
     &:hover {
       border-bottom: 2px solid white;
     }

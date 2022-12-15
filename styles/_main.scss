@@ -2,3 +2,16 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.hero_container {
+  @include lg {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero_container div {
+  min-width: 300px;
+  order: -1;
+  padding: 1rem;
+}
