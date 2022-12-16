@@ -16,6 +16,10 @@
   padding: 1rem;
 }
 
+.hero_text {
+  max-width: 570px;
+}
+
 * {
   font-family: "Nunito", sans-serif;
 }
@@ -81,7 +85,7 @@ header i {
 }
 
 .hero_img {
-  padding-top: 5rem;
+  padding-top: 2rem;
   width: 100%;
   max-width: 900px;
 }
